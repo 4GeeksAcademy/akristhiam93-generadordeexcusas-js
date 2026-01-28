@@ -1,11 +1,9 @@
+let who = ["Mi perro", "Mi tio", "Un Alien", "Mi vecina"];
+let action = ["se comió", "se llevó", "exterminó", "se tiró un pedo"]; 
+let what = ["mi proyecto", "mi dinero", "mi pawhatte", "mi motivación"];
+let when = ["hoy", "ayer", "hace unos días", "el año pasado"]
 
-let Quien = ["Mi perro", "Mi tio", "Un Alien", "Mi vecina"];
-let Accion = ["se comió", "se llevó", "exterminó", "se tiró un pedo"]; 
-let Que = ["mi proyecto", "mi dinero", "mi paquete", "mi motivación"];
-let Cuando = ["hoy", "ayer", "hace unos días", "el año pasado"]
-
-
-let Colores = [
+let colors = [
   ["deepskyblue","yellow"],
   ["coral","deepskyblue"],
   ["dodgerblue","lightgreen"],
@@ -14,21 +12,21 @@ let Colores = [
 
 let Emojis = ["💯", "🎁", "🧁", "🚀"]
 
-function generar() {
-  let rdm1 = Math.floor(Math.random() * Quien.length);
-  let rdm2 = Math.floor(Math.random() * Accion.length);
-  let rdm3 = Math.floor(Math.random() * Que.length);
-  let rdm4 = Math.floor(Math.random() * Cuando.length);
-  let rdm5 = Math.floor(Math.random() * Colores.length);
+function generarExcusa() {
+  let rdmWho = Math.floor(Math.random() * who.length);
+  let rdmAction = Math.floor(Math.random() * action.length);
+  let rdmWhat = Math.floor(Math.random() * what.length);
+  let rdmWhen = Math.floor(Math.random() * when.length);
+  let rdmColors = Math.floor(Math.random() * colors.length);
   
-  document.getElementById("excuse").innerHTML = Quien[rdm1] + " " + Accion[rdm2] + ' ' + Que[rdm3] + ' ' + Cuando[rdm4];
-  document.body.style.background = `linear-gradient(to right, ${Colores[rdm5][0]}, ${Colores[rdm5][1]})`;
+  document.getElementById("excuse").innerHTML = who[rdmWho] + " " + action[rdmAction] + ' ' + what[rdmWhat] + ' ' + when[rdmWhen];
+  document.body.style.background = `linear-gradient(to right, ${colors[rdmColors][0]}, ${colors[rdmColors][1]})`;
   document.getElementById("emoji").innerHTML = Emojis[Math.floor(Math.random() * Emojis.length)];
 
 }
-window.onload = generar
+window.onload = generarExcusa
 document.getElementsByTagName("button")[0].onclick = function() {
   
-generar()
+generarExcusa()
 };
   

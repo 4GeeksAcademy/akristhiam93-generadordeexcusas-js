@@ -67,8 +67,7 @@ button:active {
 .fixed-bottom {
     position:absolute;
     bottom: 0;
-    width: 100%;
-    text-align: left;
+    width: 200px;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 1em; 
