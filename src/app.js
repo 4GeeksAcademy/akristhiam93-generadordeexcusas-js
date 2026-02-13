@@ -1,6 +1,6 @@
 let who = ["Mi perro", "Mi tio", "Un Alien", "Mi vecina"];
 let action = ["se comió", "se llevó", "exterminó", "se tiró un pedo"]; 
-let what = ["mi proyecto", "mi dinero", "mi pawhatte", "mi motivación"];
+let what = ["mi proyecto", "mi dinero", "mi paquete", "mi motivación"];
 let when = ["hoy", "ayer", "hace unos días", "el año pasado"]
 
 let colors = [
